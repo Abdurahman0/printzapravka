@@ -7,6 +7,7 @@ import Services from './components/Services'
 import About from './components/About'
 import Guarantee from './components/Guarantee'
 import Status from './components/Status'
+import Features from './components/Features'
 import Advantages from './components/Advantages'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
 			<About />
 			<Guarantee />
 			<Status />
+			<Features />
 			<Advantages />
 		</div>
 	)

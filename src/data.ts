@@ -36,3 +36,30 @@ export const cardData = [
 		propsClass: 'md:!ml-[0%] xl:!ml-[40%]',
 	},
 ]
+
+export const services = [
+	{
+		title: 'Все бренды',
+		subtitle: 'РЕМОНТ МФУ принтеров',
+		description:
+			'Ремонт МФУ принтеров всех брендов. Замена картриджей, ремонт печатающей головки, восстановление фотобарабана, настройка сетей.',
+		image: 'https://www.printzapravka.uz/assets/remont-mfu-CYPp7AR7.png',
+		className: 'bg-gradient-to-r from-blue-500 to-teal-400',
+	},
+	{
+		title: 'Ремонт ноутбуков всех марок и моделей.',
+		subtitle: 'РЕМОНТ Ноутбуков',
+		description:
+			'Профессиональный ремонт ноутбуков. Замена матрицы, клавиатуры, жесткого диска, ремонт материнской платы и многое другое.',
+		image: 'https://www.printzapravka.uz/assets/remont-nout-Dy4yGOJ8.png',
+		className: 'bg-gradient-to-r from-green-400 to-blue-600',
+	},
+	{
+		title: 'Решение проблемы. Ремонт и обслуживание шредеров.',
+		subtitle: 'РЕМОНТ Шредеров',
+		description:
+			'Ремонт и техническое обслуживание шредеров. Быстрое восстановление вашего оборудования. Замена изношенных деталей.',
+		image: 'https://www.printzapravka.uz/assets/remont-shreder-CN7808_L.png',
+		className: 'bg-gradient-to-r from-red-400 to-orange-500',
+	},
+]
