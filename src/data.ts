@@ -63,3 +63,5 @@ export const services = [
 		className: 'bg-gradient-to-r from-red-400 to-orange-500',
 	},
 ]
+
+// react count up

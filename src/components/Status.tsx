@@ -1,65 +1,10 @@
 import AOS from 'aos'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
+import CountUp from 'react-countup'
 
 function Status(): JSX.Element {
-	// Define the state type
-	interface Counts {
-		years: number
-		printers: number
-		reviews: number
-	}
-
-	const [counts, setCounts] = useState<Counts>({
-		years: 0,
-		printers: 0,
-		reviews: 0,
-	})
-
-	/**
-	 * Animates a counter from 0 to a specified end value.
-	 *
-	 * @param endValue - The final value to count to
-	 * @param duration - Total duration of the animation in milliseconds
-	 * @param callback - Function to update the state with the current count
-	 */
-	const animateCount = (
-		endValue: number,
-		duration: number,
-		callback: (value: number) => void
-	): void => {
-		const startTime = performance.now()
-
-		const updateCounter = (currentTime: number): void => {
-			const elapsedTime = currentTime - startTime
-			const progress = Math.min(elapsedTime / duration, 1) // Cap progress to 1
-			const currentValue = Math.round(progress * endValue)
-
-			callback(currentValue)
-
-			if (progress < 1) {
-				requestAnimationFrame(updateCounter)
-			}
-		}
-
-		requestAnimationFrame(updateCounter)
-	}
-
 	useEffect(() => {
 		AOS.init()
-
-		// Total duration for all counters
-		const totalDuration = 3000
-
-		// Animate all counters
-		animateCount(6, totalDuration, value =>
-			setCounts(prev => ({ ...prev, years: value }))
-		)
-		animateCount(14000, totalDuration, value =>
-			setCounts(prev => ({ ...prev, printers: value }))
-		)
-		animateCount(2500, totalDuration, value =>
-			setCounts(prev => ({ ...prev, reviews: value }))
-		)
 	}, [])
 
 	return (
@@ -79,7 +24,14 @@ function Status(): JSX.Element {
 					{/* Years on the Market */}
 					<div className='flex flex-col gap-4 items-center p-5 bg-opacity-20 backdrop-blur-lg rounded-lg shadow-md max-w-[320px] w-full'>
 						<h2 className='font-[Furore] font-semibold text-[50px] text-white'>
-							{counts.years}
+							{
+								<CountUp
+									start={0}
+									end={6}
+									enableScrollSpy={true}
+									duration={3}
+								/>
+							}
 						</h2>
 						<h3 className='font-[Furore] font-normal text-[24px] mb-3 text-white text-center'>
 							ЛЕТ НА РЫНКЕ
@@ -93,7 +45,14 @@ function Status(): JSX.Element {
 					{/* Printers Repaired */}
 					<div className='flex flex-col gap-4 items-center p-5 bg-opacity-20 backdrop-blur-lg rounded-lg shadow-md max-w-[320px] w-full'>
 						<h2 className='font-[Furore] font-semibold text-[50px] text-white'>
-							{counts.printers}
+							{
+								<CountUp
+									start={0}
+									end={14000}
+									enableScrollSpy={true}
+									duration={3}
+								/>
+							}
 						</h2>
 						<h3 className='font-[Furore] font-normal text-[24px] mb-3 text-white text-center'>
 							ПРИНТЕРОВ ОТРЕМОНТИРОВАНО
@@ -107,7 +66,14 @@ function Status(): JSX.Element {
 					{/* Reviews */}
 					<div className='flex flex-col gap-4 items-center p-5 bg-opacity-20 backdrop-blur-lg rounded-lg shadow-md max-w-[320px] w-full'>
 						<h2 className='font-[Furore] font-semibold text-[50px] text-white'>
-							{counts.reviews}
+							{
+								<CountUp
+									start={0}
+									end={2500}
+									enableScrollSpy={true}
+									duration={3}
+								/>
+							}
 						</h2>
 						<h3 className='font-[Furore] font-normal text-[24px] mb-3 text-white text-center'>
 							ОТЗЫВОВ
