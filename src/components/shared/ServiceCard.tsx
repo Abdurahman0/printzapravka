@@ -3,7 +3,6 @@ interface ServiceProps {
 	subtitle: string
 	description: string
 	image: string
-	className: string
 }
 
 interface ServiceCardProps {
@@ -11,7 +10,7 @@ interface ServiceCardProps {
 }
 
 export const ServiceCard = ({ service }: ServiceCardProps) => (
-	<div className={`relative w-full h-[250px] mx-auto ${service.className}`}>
+	<div className={`relative w-full h-[250px] mx-auto`}>
 		<div className='relative h-full group'>
 			<div className='rounded-3xl h-full overflow-hidden bg-[#EFEFEF] shadow-lg transition-transform duration-500 transform group-hover:scale-105 group-hover:shadow-2xl hover:rotate-3'>
 				<img

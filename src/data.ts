@@ -44,7 +44,6 @@ export const services = [
 		description:
 			'Ремонт МФУ принтеров всех брендов. Замена картриджей, ремонт печатающей головки, восстановление фотобарабана, настройка сетей.',
 		image: 'https://www.printzapravka.uz/assets/remont-mfu-CYPp7AR7.png',
-		className: 'bg-gradient-to-r from-blue-500 to-teal-400',
 	},
 	{
 		title: 'Ремонт ноутбуков всех марок и моделей.',
@@ -52,7 +51,6 @@ export const services = [
 		description:
 			'Профессиональный ремонт ноутбуков. Замена матрицы, клавиатуры, жесткого диска, ремонт материнской платы и многое другое.',
 		image: 'https://www.printzapravka.uz/assets/remont-nout-Dy4yGOJ8.png',
-		className: 'bg-gradient-to-r from-green-400 to-blue-600',
 	},
 	{
 		title: 'Решение проблемы. Ремонт и обслуживание шредеров.',
@@ -60,7 +58,28 @@ export const services = [
 		description:
 			'Ремонт и техническое обслуживание шредеров. Быстрое восстановление вашего оборудования. Замена изношенных деталей.',
 		image: 'https://www.printzapravka.uz/assets/remont-shreder-CN7808_L.png',
-		className: 'bg-gradient-to-r from-red-400 to-orange-500',
+	},
+	{
+		title: 'С гарантией',
+		subtitle: 'РЕМОНТ Термопринт',
+		description:
+			'Качественный ремонт термопринтеров с гарантией. Замена термоэлемента, роликов, ремонт электроники настройка калибровка.',
+		image: 'https://www.printzapravka.uz/assets/remont-termoprint-CM0XruvH.png',
+	},
+	{
+		title: 'Любая сложность',
+		subtitle: 'РЕМОНТ Плоттеров',
+		description:
+			'Ремонт плоттеров любой сложности. Замена чернильных голов, ремонт механизмов подачи бумаги, восстановление электронных плат.',
+		image: 'https://www.printzapravka.uz/assets/remont-plotter-DPXAMF5a.png',
+	},
+	{
+		title: 'Установка Windows программы',
+		subtitle: 'РЕМОНТ КОМПЬЮТЕРОВ',
+		description:
+			'Опытные специалисты устранят любые неполадки вашего компьютера, от программных сбоев до аппаратных поломок. Гарантия на выполненные работы.',
+
+		image: 'https://www.printzapravka.uz/assets/remont-pk-BhH4St5V.png',
 	},
 ]
 
