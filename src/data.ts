@@ -83,4 +83,59 @@ export const services = [
 	},
 ]
 
-// react count up
+export const BrandItems = [
+	{ image: 'https://www.printzapravka.uz/assets/brand-canon-DilBFEjc.png' },
+	{ image: 'https://www.printzapravka.uz/assets/brand-epson-Dx9ZIMvV.png' },
+	{ image: 'https://www.printzapravka.uz/assets/brand-hewlett-CB9e-dkd.png' },
+	{ image: 'https://www.printzapravka.uz/assets/brand-kyocera-BCl3Ylt3.png' },
+	{ image: 'https://www.printzapravka.uz/assets/brand-oki-DRAmekg1.png' },
+	{ image: 'https://www.printzapravka.uz/assets/brand-samsung-vFraPuwF.png' },
+	{ image: 'https://www.printzapravka.uz/assets/brand-xerox-DKfsA-Rx.png' },
+	{ image: 'https://www.printzapravka.uz/assets/brand-pantum-Bl_hCuJh.png' },
+	{ image: 'https://www.printzapravka.uz/assets/brand-ricoh-_wgxdrKi.png' },
+]
+
+export const CommentCardsData = [
+	{
+		name: 'Достон Ерназаров',
+		image: 'https://www.printzapravka.uz/assets/client-1-BPjIS0k-.jpg',
+		comment:
+			'После того как мой принтер начал давать сбои, я обратился в эту компанию. Принтер починили быстро и качественно, теперь он работает как новый. Очень доволен обслуживанием, буду рекомендовать всем!',
+	},
+	{
+		name: 'Дилноза Назарова',
+		image: 'https://www.printzapravka.uz/assets/client-2-BjxsNpHc.webp',
+		comment:
+			'Заправка картриджа в этой компании — это всегда быстро и без проблем. Мой принтер работает отлично, а заправка картриджа в разы дешевле, чем покупка нового. Спасибо за отличный сервис!',
+	},
+	{
+		name: 'Шухрат Абдуманнопов',
+		image: 'https://www.printzapravka.uz/assets/client-3-DKssAlZj.webp',
+		comment:
+			'Мой плоттер перестал работать должным образом, и я обратился сюда. Специалисты быстро нашли причину и починили его. Теперь он печатает идеально, а я доволен качеством работы!',
+	},
+	{
+		name: 'Сабина Баратова',
+		image: 'https://www.printzapravka.uz/assets/client-4-B5YWwYFq.webp',
+		comment:
+			'Мой офисный принтер перестал печатать качественно, и я решила обратиться за помощью. Сервис был на высшем уровне, принтер починили оперативно, и теперь он работает без сбоев. Очень довольна результатом!',
+	},
+	{
+		name: 'Хуршид Эргашов',
+		image: 'https://www.printzapravka.uz/assets/client-5-C1yo3SQy.jpg',
+		comment:
+			'Компания отлично заправила мой картридж, и теперь мой принтер работает как новый! Услуга быстрая, качественная и доступная. Очень доволен качеством и обслуживанием!',
+	},
+	{
+		name: 'Ирина Андреевна',
+		image: 'https://www.printzapravka.uz/assets/client-6-DyODgiis.webp',
+		comment:
+			'Заправка картриджей здесь — это удобно и выгодно! Мой принтер после заправки стал работать лучше, а качество печати заметно улучшилось. Спасибо за быстрый и качественный сервис!',
+	},
+	{
+		name: 'Темур Жавлонов',
+		image: 'https://www.printzapravka.uz/assets/client-7-BAfM0KJY.jpg',
+		comment:
+			'С помощью этой компании мой принтер снова работает как новый! Ребята не только починили технику, но и дали полезные советы по обслуживанию. Очень рад, что обратился сюда!',
+	},
+]

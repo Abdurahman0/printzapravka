@@ -9,6 +9,10 @@ import Guarantee from './components/Guarantee'
 import Status from './components/Status'
 import Features from './components/Features'
 import Advantages from './components/Advantages'
+import Brands from './components/Brands'
+import Form from './components/Form'
+import Comments from './components/Comments'
+import Footer from './components/Footer'
 
 function App() {
 	useEffect(() => {
@@ -27,6 +31,10 @@ function App() {
 			<Status />
 			<Features />
 			<Advantages />
+			<Brands />
+			<Form />
+			<Comments />
+			<Footer />
 		</div>
 	)
 }
