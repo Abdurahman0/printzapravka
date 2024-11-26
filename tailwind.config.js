@@ -12,7 +12,7 @@ export default {
 				glowScale: {
 					'0%, 100%': {
 						transform: 'scale(1)',
-						boxShadow: '0 0 10px rgba(0, 123, 255, 0.6)',
+						boxShadow: '0 0 10px rgba(0, 123, 255, 6)',
 					},
 					'50%': {
 						transform: 'scale(1.1)',
