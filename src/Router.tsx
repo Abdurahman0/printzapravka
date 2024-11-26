@@ -5,7 +5,7 @@ import Uslug from './components/Uslug'
 import Sale from './components/Sale'
 import Call from './components/Call'
 
-export const router = createBrowserRouter([
+const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <App />,
@@ -27,3 +27,5 @@ export const router = createBrowserRouter([
 		element: <Call />,
 	},
 ])
+
+export default router
