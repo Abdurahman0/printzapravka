@@ -13,6 +13,7 @@ import Brands from './components/Brands'
 import Form from './components/Form'
 import Comments from './components/Comments'
 import Footer from './components/Footer'
+import CallBtn from './components/shared/CallBtn'
 
 function App() {
 	useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
 
 	return (
 		<div className=''>
+			<CallBtn />
 			<Navbar />
 			<Hero />
 			<Services />
@@ -30,7 +32,9 @@ function App() {
 			<Guarantee />
 			<Status />
 			<Features />
-			<Advantages />
+			<div className='bg-white'>
+				<Advantages classN='text-black' />
+			</div>
 			<Brands />
 			<Form />
 			<Comments />

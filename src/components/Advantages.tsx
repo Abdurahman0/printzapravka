@@ -1,10 +1,16 @@
 import { services } from '../data'
 import { ServiceCard } from './shared/ServiceCard'
 
-function Advantages() {
+interface IAdvantages {
+	classN: string
+}
+
+function Advantages({ classN }: IAdvantages) {
 	return (
-		<div className='bg-white'>
-			<h2 className='text-3xl sm:text-4xl md:text-5xl font-bold text-center text-black'>
+		<div className='bg-transparent'>
+			<h2
+				className={`text-3xl sm:text-4xl md:text-5xl font-bold text-center ${classN}`}
+			>
 				Наши Услуги
 			</h2>
 			<div className='w-[70%] h-[2px] mx-auto bg-gradient-to-r from-teal-500 to-blue-600 my-4' />

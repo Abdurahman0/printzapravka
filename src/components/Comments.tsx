@@ -31,7 +31,6 @@ function Comments() {
 					}}
 					spaceBetween={50}
 					slidesPerView={3}
-					navigation
 				>
 					{CommentCardsData.map((item, id) => (
 						<SwiperSlide key={id}>
