@@ -3,7 +3,7 @@ function CallBtn() {
 		<>
 			<a
 				href='tel:+998940511494'
-				className='fixed bottom-[60px] right-[20px] z-10'
+				className='fixed bottom-[60px] right-[90px] sm:right-[20px] z-10'
 			>
 				<button className='border-none rounded-full shadow-md transition duration-200 bg-[#312b4d] w-16 h-16 flex items-center justify-center animate-glowScale'>
 					<svg

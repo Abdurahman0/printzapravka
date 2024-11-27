@@ -78,7 +78,8 @@ function Form() {
 							<input
 								type='tel'
 								name='phone'
-								placeholder='940511494'
+								placeholder='94-654-23-41'
+								pattern='\d{2}-\d{3}-\d{2}-\d{2}'
 								maxLength={9}
 								required
 								value={formData.phone}
