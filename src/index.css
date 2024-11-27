@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.no-scroll {
+	overflow: hidden;
+}
+
+/* Optional: Add this to your CSS file */
+.mobile-menu {
+	width: 80%; /* Covers 80% of the screen width */
+	max-width: 300px; /* Optional: Limit the maximum width */
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #1b2838;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+	transform: translateX(-100%); /* Initially hidden */
+	transition: transform 0.3s ease-in-out; /* Smooth slide-in effect */
+}
+
+.mobile-menu.open {
+	transform: translateX(0); /* Slide in when open */
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(1, 9, 33, 0.5);
+	z-index: 999;
+	display: none; /* Initially hidden */
+}
+
+.overlay.open {
+	display: block; /* Show overlay when menu is open */
+}

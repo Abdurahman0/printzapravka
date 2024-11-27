@@ -253,3 +253,26 @@ export const SaleCardItems = [
 			', что позволяет нам обеспечивать надежность и высокое качество ремонта.',
 	},
 ]
+
+export const ServiceData = [
+	{
+		image: 'https://www.printzapravka.uz/assets/photo-1-wbPSPgqC.jpg',
+		title: 'Заправка монохромные лазерные картриджей',
+	},
+	{
+		image: 'https://www.printzapravka.uz/assets/photo-2-CC4ylwUk.jpg',
+		title: 'Заправка струйные цветные картриджей',
+	},
+	{
+		image: 'https://www.printzapravka.uz/assets/photo-3-CSNh64D_.jpg',
+		title: 'Заправка монохромные лазерные картриджей',
+	},
+	{
+		image: 'https://www.printzapravka.uz/assets/photo-4-Cnzzg7kV.png',
+		title: 'Заправка цветные лазерные картриджей',
+	},
+	{
+		image: 'https://www.printzapravka.uz/assets/photo-6-DCmbfDOy.jpg',
+		title: 'Продажа картриджей',
+	},
+]

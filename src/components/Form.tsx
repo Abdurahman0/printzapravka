@@ -40,7 +40,7 @@ function Form() {
 			})
 	}
 	return (
-		<div className='relative min-h-screen flex items-center justify-center bg-gradient-to-r from-[#1B2838] to-[#2A3F54] p-6'>
+		<div className='relative min-h-screen pt-24 md:pt-0 flex items-center justify-center bg-gradient-to-r from-[#1B2838] to-[#2A3F54] p-6'>
 			<ToastContainer />
 			<div className='max-w-4xl w-full bg-gray-800 bg-opacity-80 shadow-lg rounded-xl p-8 md:p-12 transform transition duration-700 hover:scale-105 border border-gray-700'>
 				<h2 className='text-4xl font-semibold text-center text-white mb-10 tracking-wider'>

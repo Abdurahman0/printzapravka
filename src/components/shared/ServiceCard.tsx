@@ -1,47 +1,47 @@
-interface ServiceProps {
-	title: string
-	subtitle: string
-	description: string
+import { useEffect } from 'react'
+import AOS from 'aos'
+interface IServiceData {
 	image: string
+	title: string
 }
 
-interface ServiceCardProps {
-	service: ServiceProps
-}
-
-export const ServiceCard = ({ service }: ServiceCardProps) => (
-	<div className={`relative w-full h-[250px] mx-auto`}>
-		<div className='relative h-full group'>
-			<div className='rounded-3xl h-full overflow-hidden bg-[#EFEFEF] shadow-lg transition-transform duration-500 transform group-hover:scale-105 group-hover:shadow-2xl hover:rotate-3'>
-				<img
-					src={service.image}
-					alt={service.subtitle}
-					className='w-full h-full object-cover transition-transform duration-500 transform group-hover:scale-110'
-				/>
-				<div className='absolute inset-0 bg-gradient-to-t from-black opacity-50 group-hover:opacity-40 transition-opacity duration-300'></div>
-				<div className='absolute bottom-0 p-6 w-full bg-gradient-to-t from-black text-white bg-opacity-70 group-hover:bg-opacity-50 transition-all duration-300'>
-					<h3 className='text-xl font-bold mb-2 transform group-hover:scale-110 transition-transform duration-300'>
-						{service.title}
+function ServiceCard({ image, title }: IServiceData) {
+	useEffect(() => {
+		AOS.init()
+	}, [])
+	return (
+		<>
+			<a
+				href='/mastercall'
+				data-aos='fade-right'
+				data-aos-duration='1500'
+				data-aos-offset='50'
+				data-aos-delay='500'
+			>
+				<div className='w-[90%] h-[200px] sm:h-[220px] md:w-[220px] cursor-pointer md:h-[120px] overflow-hidden relative group rounded-lg shadow-lg transition-all duration-500'>
+					<div className='absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-transparent to-transparent group-hover:from-blue-500 group-hover:via-indigo-500 group-hover:to-purple-500 border-4 border-transparent rounded-lg transition-all duration-1000'></div>
+					<div className='w-full h-full transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-3'>
+						<img
+							src={image}
+							alt='Image'
+							className='w-full h-full object-cover transition-transform duration-500'
+						/>
+					</div>
+					<h3 className='title absolute z-10 text-white text-[12px] text-center w-[95%] font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 uppercase px-4 py-2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-100 group-hover:opacity-0 group-hover:scale-110 transition-all duration-500 rounded-xl shadow-lg'>
+						{title}
 					</h3>
-					<h4 className='text-lg font-medium mb-4 transform group-hover:scale-105 transition-transform duration-300'>
-						{service.subtitle}
-					</h4>
-					<button className='py-2 px-6 text-white font-semibold rounded-full border-2 border-gray-800 hover:bg-slate-300 hover:text-blue-700 transition-transform duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-opacity-50'>
-						Подробнее
-					</button>
+					<div
+						className='absolute w-full h-full flex justify-center items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-lg font-semibold bg-gradient-to-b from-black via-transparent to-black bg-opacity-50 px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out
+						'
+					>
+						<span className='relative text-2xl font-bold bg-gradient-to-r from-purple-200 to-white bg-clip-text text-transparent group-hover:stroke-[2px] group-hover:stroke-black transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-6'>
+							Связаться с нами
+						</span>
+					</div>
 				</div>
-			</div>
-			<div className='absolute inset-0 p-4 bg-[#1B2838] bg-opacity-95 rounded-3xl shadow-lg transition-transform duration-500 opacity-0 translate-y-full pointer-events-none group-hover:translate-y-0'>
-				<button className='absolute top-2 right-2 p-2 text-white text-xl font-semibold rounded-full transition-transform duration-200 focus:outline-none'>
-					✕
-				</button>
-				<h3 className='text-sm sm:text-xl md:text-2xl font-bold text-white mb-2'>
-					{service.subtitle}
-				</h3>
-				<p className='text-white text-sm sm:text-lg mb-4'>
-					{service.description}
-				</p>
-			</div>
-		</div>
-	</div>
-)
+			</a>
+		</>
+	)
+}
+
+export default ServiceCard

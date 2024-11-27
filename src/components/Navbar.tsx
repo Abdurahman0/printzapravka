@@ -1,3 +1,5 @@
+import MobileModal from './Mobile'
+
 function Navbar() {
 	return (
 		<div className='border-r-emerald-700 h-[80px] bg-[#1B2838] fixed w-full z-50'>
@@ -11,7 +13,7 @@ function Navbar() {
 						/>
 					</div>
 				</a>
-				<ul className='text-zinc-300 hidden gap-5 min-[768px]:flex min-[768px]:items-center'>
+				<ul className='text-zinc-300 hidden gap-5 md:flex md:items-center'>
 					<li className='hover:scale-105 hover:font-bold font-medium transition-all duration-300'>
 						<a href='/'>Главная</a>
 					</li>
@@ -28,6 +30,9 @@ function Navbar() {
 						<a href='/mastercall'>Вызвать мастера</a>
 					</li>
 				</ul>
+				<div className='absolute top-[20%] right-[2%] md:hidden'>
+					<MobileModal />
+				</div>
 			</div>
 		</div>
 	)

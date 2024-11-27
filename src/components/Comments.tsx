@@ -30,7 +30,14 @@ function Comments() {
 						swiperRef.current = swiper
 					}}
 					spaceBetween={50}
-					slidesPerView={3}
+					breakpoints={{
+						640: {
+							slidesPerView: 1,
+						},
+						1040: {
+							slidesPerView: 3,
+						},
+					}}
 				>
 					{CommentCardsData.map((item, id) => (
 						<SwiperSlide key={id}>

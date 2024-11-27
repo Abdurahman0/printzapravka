@@ -23,7 +23,7 @@ function App() {
 	}, [])
 
 	return (
-		<div className=''>
+		<div className='w-screen'>
 			<CallBtn />
 			<Navbar />
 			<Hero />

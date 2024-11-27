@@ -8,11 +8,11 @@ function Hero() {
 
 	return (
 		<>
-			<div className='bg-gradient-to-r from-[#1B2838] to-[#2A3F54] pt-20 pb-20 relative overflow-hidden min-[768px]:pb-36 min-[768px]:pt-24'>
-				<div className='container mx-auto px-2 min-[480px]:px-6 lg:px-20 relative z-10'>
-					<div className='flex w-[1200px] flex-col lg:flex-row items-start  justify-between space-y-12 lg:space-y-0 lg:space-x-12 relative mt-16'>
+			<div className='bg-gradient-to-r from-[#1B2838] to-[#2A3F54] pt-20 pb-20 relative overflow-hidden md:pb-36 md:pt-24'>
+				<div className='container mx-auto px-2 sm:px-6 lg:px-20 relative z-10'>
+					<div className='flex md:w-[1200px] flex-col md:flex-row lg:flex-row items-start  justify-between space-y-12 lg:space-y-0 lg:space-x-12 relative mt-16'>
 						{/* Text Section */}
-						<div className='lg:w-1/2 flex flex-col justify-center text-start text-white space-y-6 min-[480px]:px-4 relative z-10'>
+						<div className='lg:w-1/2 flex flex-col justify-center text-start text-white space-y-6 sm:px-4 relative z-10'>
 							<h2
 								data-aos='fade-right'
 								data-aos-duration='1500'
@@ -50,7 +50,7 @@ function Hero() {
 									data-aos-duration='1500'
 									data-aos-offset='50'
 									data-aos-delay='500'
-									className='bg-indigo-500 text-[12px] min-[480px]:text-[16px] bg-opacity-20 text-indigo-300 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-40 transition duration-300 transform hover:scale-105'
+									className='bg-indigo-500 text-[12px] sm:text-[16px] bg-opacity-20 text-indigo-300 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-40 transition duration-300 transform hover:scale-105'
 								>
 									Заказать ремонт
 								</a>
@@ -60,14 +60,14 @@ function Hero() {
 									data-aos-duration='1500'
 									data-aos-offset='50'
 									data-aos-delay='500'
-									className='border-2 text-[12px] min-[480px]:text-[16px] border-indigo-400 text-indigo-300 py-3 px-8 rounded-lg hover:bg-indigo-400 hover:text-white transition duration-300 transform hover:scale-105'
+									className='border-2 text-[12px] sm:text-[16px] border-indigo-400 text-indigo-300 py-3 px-8 rounded-lg hover:bg-indigo-400 hover:text-white transition duration-300 transform hover:scale-105'
 								>
 									Узнать подробнее
 								</a>
 							</div>
 						</div>
 						{/* Image Section */}
-						<div className='lg:w-1/2 flex justify-center items-center relative overflow-hidden rounded-2xl shadow-2xl w-[450px] h-[450px] cursor-pointer'>
+						<div className='lg:w-1/2 flex justify-center items-center relative overflow-hidden rounded-2xl md:shadow-2xl w-[380px] h-[400px] md:w-[450px] md:h-[450px] cursor-pointer'>
 							<img
 								src='https://www.printzapravka.uz/assets/introimages-BtPiIBjT.png'
 								alt='Ремонт принтеров и заправка картриджей'
