@@ -18,7 +18,7 @@ function ServiceCard({ image, title }: IServiceData) {
 				data-aos-offset='50'
 				data-aos-delay='500'
 			>
-				<div className='w-[90%] h-[200px] sm:h-[220px] md:w-[220px] cursor-pointer md:h-[120px] overflow-hidden relative group rounded-lg shadow-lg transition-all duration-500'>
+				<div className='w-[90%] h-[200px] mx-auto sm:h-[220px] md:w-[220px] cursor-pointer md:h-[120px] overflow-hidden relative group rounded-lg shadow-lg transition-all duration-500'>
 					<div className='absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-transparent to-transparent group-hover:from-blue-500 group-hover:via-indigo-500 group-hover:to-purple-500 border-4 border-transparent rounded-lg transition-all duration-1000'></div>
 					<div className='w-full h-full transition-transform duration-500 transform group-hover:scale-110 group-hover:rotate-3'>
 						<img
