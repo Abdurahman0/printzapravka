@@ -80,7 +80,7 @@ function Form() {
 								name='phone'
 								placeholder='94-654-23-41'
 								pattern='\d{2}-\d{3}-\d{2}-\d{2}'
-								maxLength={9}
+								maxLength={12}
 								required
 								value={formData.phone}
 								onChange={handleInputChange}
