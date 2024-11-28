@@ -1,7 +1,23 @@
 import AOS from 'aos'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 function Hero() {
+	const [offset, setOffset] = useState({ x: 0, y: 0 })
+
+	const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+		const { clientX, clientY, currentTarget } = e
+
+		const rect = currentTarget.getBoundingClientRect()
+		const x = ((clientX - rect.left) / rect.width - 0.5) * 100 // Adjst sensitivity
+		const y = ((clientY - rect.top) / rect.height - 0.5) * 100
+
+		setOffset({ x, y })
+	}
+
+	const handleMouseLeave = () => {
+		setOffset({ x: 0, y: 0 }) // Reset position when the mouse leaves
+	}
+
 	useEffect(() => {
 		AOS.init()
 	}, [])
@@ -10,7 +26,7 @@ function Hero() {
 		<>
 			<div className='bg-gradient-to-r from-[#1B2838] to-[#2A3F54] pt-20 pb-20 relative overflow-hidden md:pb-36 md:pt-24'>
 				<div className='container mx-auto px-2 sm:px-6 lg:px-20 relative z-10'>
-					<div className='flex md:w-[1200px] flex-col md:flex-row lg:flex-row items-start  justify-between space-y-12 lg:space-y-0 lg:space-x-12 relative mt-16'>
+					<div className='flex md:w-[1200px] flex-col md:flex-row lg:flex-row items-start justify-between space-y-12 lg:space-y-0 lg:space-x-12 relative mt-16'>
 						{/* Text Section */}
 						<div className='lg:w-1/2 flex flex-col justify-center text-start text-white space-y-6 sm:px-4 relative z-10'>
 							<h2
@@ -67,11 +83,18 @@ function Hero() {
 							</div>
 						</div>
 						{/* Image Section */}
-						<div className='lg:w-1/2 flex justify-center items-center relative overflow-hidden rounded-2xl md:shadow-2xl w-[380px] h-[400px] md:w-[450px] md:h-[450px] cursor-pointer'>
+						<div
+							className='lg:w-1/2 flex justify-center items-center relative overflow-hidden rounded-2xl md:shadow-2xl w-[380px] h-[400px] md:w-[450px] md:h-[450px] cursor-pointer'
+							onMouseMove={handleMouseMove}
+							onMouseLeave={handleMouseLeave}
+						>
 							<img
 								src='https://www.printzapravka.uz/assets/introimages-BtPiIBjT.png'
 								alt='Ремонт принтеров и заправка картриджей'
-								className='w-full rounded-2xl transition-all duration-500 ease-in-out absolute'
+								className='w-full rounded-2xl transition-transform duration-300 ease-out absolute'
+								style={{
+									transform: `translate(${offset.x}px, ${offset.y}px)`,
+								}}
 							/>
 						</div>
 					</div>
