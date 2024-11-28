@@ -1,8 +1,10 @@
+import { NavLink } from 'react-router-dom'
+
 function CallBtn() {
 	return (
 		<>
-			<a
-				href='tel:+998940511494'
+			<NavLink
+				to='tel:+998940511494'
 				className='fixed bottom-[60px] right-[25px] sm:right-[20px] z-[100]'
 			>
 				<button className='border-none rounded-full shadow-md transition duration-200 bg-[#312b4d] w-16 h-16 flex items-center justify-center animate-glowScale'>
@@ -17,7 +19,7 @@ function CallBtn() {
 						></path>
 					</svg>
 				</button>
-			</a>
+			</NavLink>
 		</>
 	)
 }

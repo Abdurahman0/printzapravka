@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { NavLink } from 'react-router-dom'
 
 function MobileModal() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -62,32 +63,32 @@ function MobileModal() {
 			>
 				<ul className='flex text-white flex-col gap-5 items-start p-4'>
 					<li className='hover:scale-105 hover:font-bold font-medium transition-all duration-300'>
-						<a href='/' onClick={e => handleLinkClick('/', e)}>
+						<NavLink to='/' onClick={e => handleLinkClick('/', e)}>
 							Главная
-						</a>
+						</NavLink>
 					</li>
 					<li className='hover:scale-105 hover:font-bold font-medium transition-all duration-300'>
-						<a href='/about' onClick={e => handleLinkClick('/about', e)}>
+						<NavLink to='/about' onClick={e => handleLinkClick('/about', e)}>
 							О нас
-						</a>
+						</NavLink>
 					</li>
 					<li className='hover:scale-105 hover:font-bold font-medium transition-all duration-300'>
-						<a href='/uslug' onClick={e => handleLinkClick('/uslug', e)}>
+						<NavLink to='/uslug' onClick={e => handleLinkClick('/uslug', e)}>
 							Услуги
-						</a>
+						</NavLink>
 					</li>
 					<li className='hover:scale-105 hover:font-bold font-medium transition-all duration-300'>
-						<a href='/brand' onClick={e => handleLinkClick('/brand', e)}>
+						<NavLink to='/brand' onClick={e => handleLinkClick('/brand', e)}>
 							Продажа и Бренды
-						</a>
+						</NavLink>
 					</li>
 					<li className='border-2 rounded-md border-indigo-500 px-4 py-1 text-white transform transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-[#1B2838] to-[#2A3F54] hover:scale-105 hover:shadow-lg'>
-						<a
-							href='/mastercall'
+						<NavLink
+							to='/mastercall'
 							onClick={e => handleLinkClick('/mastercall', e)}
 						>
 							Вызвать мастера
-						</a>
+						</NavLink>
 					</li>
 				</ul>
 			</nav>

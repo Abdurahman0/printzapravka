@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+
 function Footer() {
 	return (
 		<footer className='bg-gray-900 text-white pt-10 pb-6'>
@@ -14,19 +16,19 @@ function Footer() {
 						<h4 className='text-lg font-bold mb-4'>Компания</h4>
 						<ul className='flex flex-col gap-2'>
 							<li>
-								<a href='/about' className='hover:underline'>
+								<NavLink to='/about' className='hover:underline'>
 									О нас
-								</a>
+								</NavLink>
 							</li>
 							<li>
-								<a href='/brand' className='hover:underline'>
+								<NavLink to='/brand' className='hover:underline'>
 									Наши Перемущество
-								</a>
+								</NavLink>
 							</li>
 							<li>
-								<a href='/uslug' className='hover:underline'>
+								<NavLink to='/uslug' className='hover:underline'>
 									Наши Услуги
-								</a>
+								</NavLink>
 							</li>
 						</ul>
 					</div>
@@ -34,21 +36,21 @@ function Footer() {
 						<h4 className='text-lg font-bold mb-4'>Контакты</h4>
 						<ul className='flex flex-col gap-2'>
 							<li className='text-sm'>
-								<a
+								<NavLink
 									className='hover:underline'
-									href='mailto:tafakkurxizmatsamarasimchj@gmail.com'
+									to='mailto:tafakkurxizmatsamarasimchj@gmail.com'
 								>
 									tafakkurxizmatsamarasimchj@gmail.com
-								</a>
+								</NavLink>
 							</li>
 							<li>
-								<a href='tel:+998940511494' className='hover:underline'>
+								<NavLink to='tel:+998940511494' className='hover:underline'>
 									+998940511494
-								</a>
+								</NavLink>
 							</li>
 							<li>
-								<a
-									href='https://www.google.com/maps/place//@41.2423931,69.2797347,41m/data=!3m1!1e3!4m6!1m5!3m4!2zNDHCsDE0JzMyLjYiTiA2OcKwMTYnNDcuNCJF!8m2!3d41.2423889!4d69.2798333?entry=ttu&amp;g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D'
+								<NavLink
+									to='https://www.google.com/maps/place//@41.2423931,69.2797347,41m/data=!3m1!1e3!4m6!1m5!3m4!2zNDHCsDE0JzMyLjYiTiA2OcKwMTYnNDcuNCJF!8m2!3d41.2423889!4d69.2798333?entry=ttu&amp;g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D'
 									className='hover:underline flex flex-col'
 									target='_blank'
 									rel='noopener noreferrer'
@@ -57,7 +59,7 @@ function Footer() {
 									<span className='mt-2'>
 										Сиргалийский район, махалля Номданак, улица Файзли, дом 11.
 									</span>
-								</a>
+								</NavLink>
 							</li>
 						</ul>
 					</div>
@@ -69,12 +71,12 @@ function Footer() {
 							готовы помочь! Все, что вам нужно сделать — это позвонить, и мы
 							приедем к вам для диагностики и ремонта.
 						</p>
-						<a
-							href='/mastercall'
+						<NavLink
+							to='/mastercall'
 							className='bg-indigo-500 text-[12px] p480:text-[16px] bg-opacity-20 text-indigo-300 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-40 transition duration-300 transform hover:scale-105'
 						>
 							На Выезд
-						</a>
+						</NavLink>
 					</div>
 				</div>
 				<div className='footer-bottom-container'>

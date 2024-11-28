@@ -1,5 +1,6 @@
 import AOS from 'aos'
 import { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Hero() {
 	const [offset, setOffset] = useState({ x: 0, y: 0 })
@@ -60,8 +61,8 @@ function Hero() {
 								с гарантией.
 							</p>
 							<div className='flex space-x-4 mt-4'>
-								<a
-									href='/mastercall'
+								<NavLink
+									to='/mastercall'
 									data-aos='fade-right'
 									data-aos-duration='1500'
 									data-aos-offset='50'
@@ -69,9 +70,9 @@ function Hero() {
 									className='bg-indigo-500 text-[12px] sm:text-[16px] bg-opacity-20 text-indigo-300 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-40 transition duration-300 transform hover:scale-105'
 								>
 									Заказать ремонт
-								</a>
-								<a
-									href='/about'
+								</NavLink>
+								<NavLink
+									to='/about'
 									data-aos='fade-left'
 									data-aos-duration='1500'
 									data-aos-offset='50'
@@ -79,7 +80,7 @@ function Hero() {
 									className='border-2 text-[12px] sm:text-[16px] border-indigo-400 text-indigo-300 py-3 px-8 rounded-lg hover:bg-indigo-400 hover:text-white transition duration-300 transform hover:scale-105'
 								>
 									Узнать подробнее
-								</a>
+								</NavLink>
 							</div>
 						</div>
 						{/* Image Section */}

@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import AOS from 'aos'
+import { NavLink } from 'react-router-dom'
 interface IServiceData {
 	image: string
 	title: string
@@ -11,8 +12,8 @@ function ServiceCard({ image, title }: IServiceData) {
 	}, [])
 	return (
 		<>
-			<a
-				href='/mastercall'
+			<NavLink
+				to='/mastercall'
 				data-aos='fade-right'
 				data-aos-duration='1500'
 				data-aos-offset='50'
@@ -39,7 +40,7 @@ function ServiceCard({ image, title }: IServiceData) {
 						</span>
 					</div>
 				</div>
-			</a>
+			</NavLink>
 		</>
 	)
 }
